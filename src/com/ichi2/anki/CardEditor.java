@@ -1149,7 +1149,7 @@ public class CardEditor extends Activity {
                 if (AnkiDroidApp.SDK_VERSION > 4) {
                     ActivityTransitionAnimation.slide(CardEditor.this, ActivityTransitionAnimation.FADE);
                 }
-                mIntentInformationDialog.dismiss();
+                removeDialog(DIALOG_INTENT_INFORMATION);
             }
         });
         mCardItemBackground = Themes.getCardBrowserBackground()[0];
