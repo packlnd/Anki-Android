@@ -1424,6 +1424,7 @@ public class DeckPicker extends AnkiControllableFragmentActivity {
                                         if (mProgressDialog.isShowing()) {
                                             try {
                                                 mProgressDialog.dismiss();
+                                                removeDialog(DIALOG_DELETE_DECK);
                                             } catch (Exception e) {
                                                 Log.e(AnkiDroidApp.TAG, "onPostExecute - Dialog dismiss Exception = "
                                                         + e.getMessage());
